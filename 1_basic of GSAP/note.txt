@@ -1,0 +1,62 @@
+GSAP --> greenshock animation platform
+
+link-gsap cdn
+
+Syntax: gsap.to("elem",{properties})
+
+
+1. gsap.from --> initial state
+
+gsap.from("elem",{
+    x:200,
+    y:200,
+    backgroundColor : "yellow",
+    duration : 2,
+    ease:Expo.easeInOut
+})
+
+
+2. gsap.to --> final state
+
+gsap.to("elem",{
+    x:200,
+    y:200,
+    backgroundColor : "yellow",
+    duration : 2,
+    ease:Expo.easeInOut
+})
+
+
+3. gsap.fromto -->initial to finale state
+
+gsap.fromto("elem",{
+    x:200,
+    y:200,
+    backgroundColor : "yellow",
+    duration : 2,
+    ease:Expo.easeInOut
+},{
+    x:250,
+    y:280,
+    backgroundColor : "yellow",
+    duration : 2,
+    ease:Expo.easeInOut
+})
+
+
+---> After finish animation
+
+onComplete : function(){
+    console.log("Hey!!!!")
+}
+
+---> Before start animation
+
+onStart : function(){ code }
+
+---> Progrss start animation
+onProgress : function(){ //code }
+
+---> update on each step (everyframe) from start animation
+onUpdate : function(){ }
+
